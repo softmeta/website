@@ -1,6 +1,6 @@
 # Offical website
 
-Offical website for softmeta
+Offical website for [softmeta](https://softmeta.top)
 
 ## tech detail
 
