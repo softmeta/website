@@ -1,7 +1,7 @@
-# Offical website
+# Official website
 
-Offical website for softmeta
+Official website for [softmeta](https://softmeta.top)
 
-## tech detail
+## Tech detail
 
 [astro](https://astro.build/) + vue3 + cloudflare pages + tailwindcss
