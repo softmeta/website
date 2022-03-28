@@ -24,13 +24,8 @@
                 class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0"
               >
                 <div class="flex items-center justify-between w-full md:w-auto">
-                  <a href="#">
-                    <span class="sr-only">main</span>
-                    <img
-                      class="h-8 w-auto sm:h-10"
-                      src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-                    />
-                  </a>
+                  <Logo />
+                  <Softmeta />
                   <div class="-mr-2 flex items-center md:hidden">
                     <PopoverButton
                       class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
@@ -52,7 +47,7 @@
                 <a
                   href="#"
                   class="font-medium text-indigo-600 hover:text-indigo-500"
-                  >Log in</a
+                  >Log</a
                 >
               </div>
             </nav>
@@ -118,7 +113,7 @@
               class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl"
             >
               <span class="block xl:inline">Data to enrich your</span>
-              {{ " " }}
+              {{ ' ' }}
               <span class="block text-indigo-600 xl:inline"
                 >online business</span
               >
@@ -165,14 +160,16 @@
 </template>
 
 <script>
-import { Popover, PopoverButton, PopoverPanel } from "@headlessui/vue";
-import { MenuIcon, XIcon } from "@heroicons/vue/outline";
+import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue';
+import { MenuIcon, XIcon } from '@heroicons/vue/outline';
+import Logo from './logo.vue'
+import Softmeta from './softmeta.vue'
 
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
+  { name: 'Product', href: '#' },
+  { name: 'Features', href: '#' },
+  { name: 'Marketplace', href: '#' },
+  { name: 'Company', href: '#' },
 ];
 
 export default {
@@ -182,6 +179,8 @@ export default {
     PopoverPanel,
     MenuIcon,
     XIcon,
+    Logo,
+    Softmeta
   },
   setup() {
     return {
